@@ -1,0 +1,81 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 75%;
+  height: max-content;
+  background-color: whitesmoke;
+}
+
+.header {
+  font-size: 2rem;
+  font-weight: bold;
+  padding: 5px;
+}
+
+.footer {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: bold;
+  font-style: italic;
+  font-size: 0.7rem;
+  margin-top: 10px;
+  padding: 5px;
+  text-align: left;
+  border-top: 1px solid lightgray;
+}
+
+input {
+  min-width: 300px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.list {
+  width: 100%;
+  padding: 0;
+}
+
+.list-item {
+  font-size: large;
+  color: gray;
+  border-bottom: 1px solid lightgray;
+  list-style: none;
+  text-align: left;
+  position: relative;
+  padding: 5px;
+}
+
+.delete-button {
+  border: none;
+  background-color: transparent;
+  position: absolute;
+  right: 0px;
+  display: none;
+}
+
+.list-item:hover .delete-button {
+  display: inline-block;
+}
+
+.delete-button:hover {
+  border: none;
+  color: red;
+  cursor: pointer;
+}
+
+.delete-button:active {
+  transform: scale(0.9);
+  border: none;
+  color: red;
+  cursor: pointer;
+}
+
+.task-counter {
+  Font-size: 0.9rem;
+  color: gray;
+  
+}
